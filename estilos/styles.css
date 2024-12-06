@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font-geral: "Source Serif 4", serif;
+    --font-head: "Markazi Text", serif;
+    --color-head: #4492eb;
+    --general-color: white;
+}
+body{
+    height: 100vh;
+}
+header{
+    background-color: var(--color-head);
+    padding: 12px 0px;
+    color: var(--general-color);
+}
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.search input{
+    font-family: var(--font-geral);
+    padding: 4px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: solid 1px var(--general-color);
+}
+.search input::placeholder{
+    color: var(--general-color);
+    font-family: var(--font-geral);
+    font-family: bold;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-right: 70px;
+    cursor: pointer;
+}
+.logo i{
+    transition: .5s;
+}
+.logo h1{
+    font-family: var(--font-head);
+    font-weight: normal;
+    font-style: italic;
+    font-size: 40px;
+}
+.logo i:hover{
+    transition: .5s ease-in-out;
+    font-size: 49px;
+}
+
+.fa-shopify{
+    font-size: 40px;
+}
+.login-and-cart{
+    font-size: 30px;
+}
+.login-and-cart i{
+    padding: 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+.login-and-cart i:hover{
+    transition: .5s;
+    transform: translate(-10px,-10px);
+}
+main{
+    margin: 50px 70px;
+    font-family: var(--font-geral);
+}
+.pos-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inicio{
+    display: flex;
+    align-items: center;
+}
+.inicio i{
+    padding: 10px;
+    font-size: 46px;
+    color: var(--color-head);
+    cursor: pointer;
+}
+.inicio h2{
+    font-size: 35px;
+    font-weight: bold;
+    color: #598000;
+}
+.more{
+    display: flex;
+    align-items: center;
+}
+.more p{
+    font-size: 17px;
+    font-weight: bold;
+    padding-right: 4px;
+    margin: 4px;
+}
+.distance{
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+.para-destaque select{
+    font-family: var(--font-geral);
+    font-weight: bold;
+    font-size: 15px;
+    padding: 14px;
+    border-radius: 20px;
+    outline: none;
+    border-color: #598000;
+}
+.para-destaque select option{
+    font-weight: bold;
+    font-size: 15px;
+}
